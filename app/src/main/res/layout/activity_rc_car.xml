@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvInfo1"
+        android:text="Bluetooth Controlled RC Car"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imgViewHorn"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:padding="5sp"
+        android:src="@drawable/ic_baseline_volume_up_24" />
+
+    <ImageView
+        android:id="@+id/imgViewTurnLeft"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/imgViewForward"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_toStartOf="@id/imgViewHorn"
+        android:padding="5sp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/imgViewTurnRight"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_toEndOf="@id/imgViewHorn"
+        android:layout_below="@id/imgViewForward"
+        android:padding="5sp"
+        android:layout_margin="10sp"/>
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/imgViewForward"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        android:layout_above="@id/imgViewHorn"
+        android:layout_toEndOf="@id/imgViewTurnLeft"
+        android:padding="5sp"
+        android:layout_margin="10sp"/>
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/imgViewBackword"
+        android:src="@drawable/ic_baseline_arrow_downward_24"
+        android:layout_below="@id/imgViewHorn"
+        android:layout_toEndOf="@id/imgViewTurnLeft"
+        android:padding="5sp"
+        android:layout_margin="10sp"/>
+
+</RelativeLayout>
